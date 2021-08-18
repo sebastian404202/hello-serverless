@@ -1,8 +1,7 @@
 {
-    "name": "openwhisk-python-simple-http-endpoint",
-    "version": "0.1.0",
-    "description": "Example demonstrates how to setup a simple HTTP GET endpoint with OpenWhisk.",
-    "dependencies": {
-      "serverless-openwhisk": ">=0.13.0"
-    }
-  }
+  "name": "aws-simple-http-endpoint",
+  "version": "1.0.0",
+  "description": "Example demonstrates how to setup a simple HTTP GET endpoint with python",
+  "author": "",
+  "license": "MIT"
+}

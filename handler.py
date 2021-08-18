@@ -1,10 +1,16 @@
 import json
 import datetime
 
-def endpoint(params):
+
+def endpoint(event, context):
     current_time = datetime.datetime.now().time()
-    name = params.get("name", "stranger")
     body = {
-        "message": "Hello " + name + ", the current time is " + str(current_time)
+        "message": "Hello, the current time is " + str(current_time)
     }
-    return body
+
+    response = {
+        "statusCode": 200,
+        "body": json.dumps(body)
+    }
+
+    return response

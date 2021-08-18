@@ -1,9 +1,10 @@
+service: aws-python-simple-http-endpoint
 
-service: python-service-cajecasu
+frameworkVersion: ">=1.2.0 <2.0.0"
 
 provider:
-  name: openwhisk
-  runtime: python:3
+  name: aws
+  runtime: python2.7 # or python3.7, supported as of November 2018
 
 functions:
   currentTime:
@@ -12,6 +13,3 @@ functions:
       - http:
           path: ping
           method: get
-
-plugins:
-  - serverless-openwhisk
